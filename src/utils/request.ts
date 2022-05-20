@@ -28,6 +28,7 @@ function parseJSON(response: Response) {
  * @return {object|undefined} Returns either the response, or throws an error
  */
 function checkStatus(response: Response) {
+  //console.log('response', response);
   if (response.status >= 200 && response.status < 300) {
     return response;
   }

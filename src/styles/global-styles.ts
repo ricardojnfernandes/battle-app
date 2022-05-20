@@ -3,10 +3,16 @@ import { StyleConstants } from './StyleConstants';
 /* istanbul ignore next */
 export const GlobalStyle = createGlobalStyle`
   html,
+
   body {
-    height: 100%;
-    width: 100%;
-    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  * {
+    box-sizing: border-box
   }
 
   body {
@@ -34,3 +40,19 @@ export const GlobalStyle = createGlobalStyle`
     height: 1.5rem;
   }
 `;
+
+/*
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Montserrat;
+  }
+
+body {
+    height: 100%;
+    width: 100%;
+    line-height: 1.5;
+  } */
